@@ -39,9 +39,9 @@ public class Edge implements EdgeData {
     }
 
     @Override
-    public String getInfo() {
+    public String getInfo() {              //unimplement
         return null;
-    }          //unimplement
+    }
 
     @Override
     public void setInfo(String s) {                  //unimplement

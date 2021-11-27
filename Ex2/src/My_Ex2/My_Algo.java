@@ -4,11 +4,22 @@ import api.DirectedWeightedGraph;
 import api.DirectedWeightedGraphAlgorithms;
 import api.NodeData;
 
+import java.util.ArrayList;
 import java.util.List;
 
-import org.json.*;
-
 public class My_Algo implements DirectedWeightedGraphAlgorithms {
+
+    private Graph g;
+    private int[][] neighbor_matrix;
+    private ArrayList<Integer> pos;
+
+    public My_Algo(Graph g){
+        this.g = g;
+        neighbor_matrix = new int[g.nodeSize()][g.nodeSize()];
+        pos = new ArrayList<>(g.nodeSize());
+    }
+
+    // this function will read the json file and put the value in "private Graph g"
     @Override
     public void init(DirectedWeightedGraph g) {
 
@@ -16,7 +27,7 @@ public class My_Algo implements DirectedWeightedGraphAlgorithms {
 
     @Override
     public DirectedWeightedGraph getGraph() {
-        return null;
+        return this.g;
     }
 
     @Override

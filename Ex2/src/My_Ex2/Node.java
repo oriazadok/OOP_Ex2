@@ -6,17 +6,23 @@ import api.NodeData;
 import java.util.ArrayList;
 
 public class Node implements NodeData {
+
     private int key;
     private int tag;
     private Location location;
+    private ArrayList<Integer> arrows_in;
 
     public Node(int key, Location location){
         this.key = key;
-        this.location = location;
         this.tag = 0;
+        this.location = location;
+        this.arrows_in = new ArrayList<>();
     }
 
 
+    public ArrayList getArray() {
+        return this.arrows_in;
+    }
 
     @Override
     public int getKey() {
@@ -42,12 +48,12 @@ public class Node implements NodeData {
     @Override
     public void setWeight(double w) {
 
-    }                        //unimplemet
+    }                                                      //unimplemet
 
     @Override
     public String getInfo() {                        //unimplemet
         return null;
-    }
+    }             //unimplemet
 
     @Override
     public void setInfo(String s) {                    //unimplemet
