@@ -10,19 +10,27 @@ public class Node implements NodeData {
     private int key;
     private int tag;
     private Location location;
+    private ArrayList<Integer> arrows_out;
     private ArrayList<Integer> arrows_in;
 
     public Node(int key, Location location){
         this.key = key;
         this.tag = 0;
         this.location = location;
+        this.arrows_out = new ArrayList<>();
         this.arrows_in = new ArrayList<>();
     }
 
 
-    public ArrayList getArray() {
+    public ArrayList getArrowsOut() {
+        return this.arrows_out;
+    }
+
+    public ArrayList getArrowsIn() {
         return this.arrows_in;
     }
+
+
 
     @Override
     public int getKey() {

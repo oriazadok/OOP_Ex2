@@ -2,9 +2,6 @@ package My_Ex2;
 
 import api.EdgeData;
 
-import java.io.IOException;
-
-
 public class Edge implements EdgeData {
     private int src;
     private int dest;
