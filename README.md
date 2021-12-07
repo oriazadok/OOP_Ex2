@@ -23,7 +23,7 @@
 
 
 ## uml :
- ![This is an image](https://user-images.githubusercontent.com/92825016/145034639-87cb0d3f-3685-4bf9-9849-a091ce6fd008.png)  
+ ![This is an image](![image](https://user-images.githubusercontent.com/92825016/145040004-afc75f74-b14a-4bd6-8967-52d6488b4aa3.png)  
 
 
 ## my_Algo - function:
