@@ -12,18 +12,23 @@
 6. import java.io.PrintWriter;
 7. import java.util.HashMap;
 8. import java.util.List;
+9. import javax.swing.*;
+10. import java.awt.*;
+11. import java.awt.event.ActionEvent;
+12. import java.awt.event.ActionListener;
 
 ## class
 1. Graph - this class create object from type graph.
 2. Node - this class create object from type node.
 3. Edge - this class create object from type edge.
+4. Ex2 -  this class the linked to class MyGui,my_Algo and create DirectedWeightedGraph  .
 5. my_Algo - this class include  function that we use on graph.
 6. jsonToFile - in this class we create  json object from json file. 
 7. MyGui - graphic interface.
 
 
 ## uml :
- ![This is an image](![image](https://user-images.githubusercontent.com/92825016/145040004-afc75f74-b14a-4bd6-8967-52d6488b4aa3.png)  
+![image](https://user-images.githubusercontent.com/92825016/145040004-afc75f74-b14a-4bd6-8967-52d6488b4aa3.png)  
 
 
 ## my_Algo - function:
@@ -33,7 +38,7 @@ Inits the graph on which this set of algorithms operates on.
 #### **DirectedWeightedGraph()**
 Returns the underlying graph of which this class works.
 
-#### **Copy**
+#### **Copy()**
 Computes a deep copy of this weighted graph.
 
 #### **isConnected()** 
